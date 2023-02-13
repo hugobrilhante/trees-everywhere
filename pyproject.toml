@@ -40,11 +40,9 @@ ignore = [
 
 [tool.pylint.messages_control]
 disable = [
-    "no-init",
-    "bad-continuation",
-    "bad-whitespace",
     "missing-module-docstring",
-    "missing-class-docstring"
+    "missing-class-docstring",
+    "too-few-public-methods"
 ]
 
 [tool.coverage.run]

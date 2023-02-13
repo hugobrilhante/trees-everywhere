@@ -3,7 +3,8 @@ repos:
     rev: v2.16.1
     hooks:
       - id: pylint
-        additional_dependencies: [ django, django-configurations]
+        exclude: "[a-zA-Z]*/(migrations)/(.)*"
+        additional_dependencies: [django, django-configurations]
   - repo: https://github.com/pycqa/flake8
     rev: 6.0.0
     hooks:

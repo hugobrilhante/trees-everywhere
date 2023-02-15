@@ -5,7 +5,7 @@ description = ""
 authors = ["Hugo Brilhante <hugobrilhante@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 django = "~4.1"
 django-configurations = "~2.4"
 django-cache-url = "~3.4.4"
@@ -16,9 +16,9 @@ psycopg2 = "~2.9.5"
 whitenoise = "~6.3.0"
 gevent = "~22.10.2"
 
-
-[tool.poetry.dev-dependencies]
-coverage = {extras = ["toml"], version = "^5.5"}
+[tool.poetry.group.dev.dependencies]
+model-bakery = "~1.10.1"
+coverage = {extras = ["toml"], version = "~7.1.0"}
 
 [tool.black]
 line-length = 120
@@ -40,6 +40,8 @@ ignore = [
 
 [tool.pylint.messages_control]
 disable = [
+    "no-member",
+    "missing-function-docstring",
     "missing-module-docstring",
     "missing-class-docstring",
     "too-few-public-methods"

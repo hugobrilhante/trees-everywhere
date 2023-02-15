@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.11
 
 ENV PYTHONUNBUFFERED 1
 
@@ -8,8 +8,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install poetry
+RUN pip install -U poetry
 
-RUN poetry config virtualenvs.create false && poetry install --no-root
+RUN poetry config virtualenvs.create false && poetry install
 
 CMD ["gunicorn", "src.wsgi"]

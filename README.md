@@ -2,6 +2,8 @@
 
 Project test for Youshop.
 
+> Note: I would like to apologize for not having done the template part, if this is an impediment I will understand. I haven't worked with templates in years, and while the test deadline was excellent, I had a pretty unusual week, so I didn't have time to review how to do it.
+
 ## How to use?
 
 > Assuming you docker and pre-commit (optional but recommended)
@@ -74,3 +76,11 @@ pre-commit run -a
 
 [whitenoise](https://github.com/evansd/whitenoise) - Radically simplified static file serving for WSGI applications
 
+[model_bakery](https://github.com/model-bakers/model_bakery) - Smart fixtures for better tests
+
+[djangorestframework](https://github.com/encode/django-rest-framework) - Django REST framework is a powerful and flexible toolkit for building Web APIs.
+
+
+## I would like to share an open source project I made.
+
+[django-outbox-pattern](https://github.com/juntossomosmais/django-outbox-pattern) - A django application to make it easier to use the transactional outbox pattern
